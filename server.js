@@ -13,7 +13,6 @@ const app = express();
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(express.static('public'));
 
 // API Routes
@@ -42,10 +41,6 @@ app.post('/api/notes', (req, res) => {
   //     res.json({ message: `Note with id ${noteId} has been deleted.` });
   //   });
   // });
-
-
-
-
 
 // _____________________________________________________________
 
